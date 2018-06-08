@@ -8,7 +8,7 @@ def config = [
         name          : 'Project Name',
         image         : PROJECT_NAME,
         stack         : PROJECT_NAME,
-        buildExtras   : '--updateSnapshots',
+        buildExtras   : '',
         key           : "${PROJECT_NAME}:${PROJECT_VERSION}",
         version       : PROJECT_VERSION,
         branch        : env.BRANCH_NAME,
