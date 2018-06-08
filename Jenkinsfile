@@ -5,7 +5,7 @@ PROJECT_VERSION = "${env.BRANCH_NAME}:${BUILD_ID}"
 
 def config = [
         activeBranches: ['dev', 'qa', 'master'],
-        name          : 'Project Name',
+        name          : 'Java Car Service',
         image         : PROJECT_NAME,
         stack         : PROJECT_NAME,
         buildExtras   : '',
