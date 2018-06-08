@@ -1,22 +1,19 @@
-@Library('projetas-library')
+@Library('projetas-library') _
 
-pipeline {
-  agent {
-    node {
-    
-    }
-  }
-  stages {
-    stage('Build') {
-      steps {
-        sh 'mvn -B -DskipTests clean package'
+node {
+    pipeline {
+      stages {
+        stage('Build') {
+          steps {
+            sh 'mvn -B -DskipTests clean package'
+          }
+        }
+        stage('Test') {
+          steps {
+            sh 'mvn test'
+            junit(testResults: 'target/surefire-reports/*.xml', allowEmptyResults: true)
+          }
+        }
       }
     }
-    stage('Test') {
-      steps {
-        sh 'mvn test'
-        junit(testResults: 'target/surefire-reports/*.xml', allowEmptyResults: true)
-      }
-    }
-  }
 }
