@@ -9,10 +9,8 @@ import javassist.CtMethod;
 import javassist.CtNewConstructor;
 import javassist.CtNewMethod;
 import javassist.NotFoundException;
-import lombok.extern.slf4j.Slf4j;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.meanbean.lang.Factory;
@@ -29,7 +27,6 @@ import java.util.Set;
 /**
  * Classe de teste para verificação de entidades
  */
-@Slf4j
 public class EntityTest {
 
     private static final String[] MODEL_PACKAGES = {
@@ -89,12 +86,6 @@ public class EntityTest {
             // Test getters, setters and #toString
             beanTester.testBean(clazz);
 
-            // Test #equals and #hashCode
-            EqualsVerifier.forClass(clazz).withRedefinedSuperclass()
-                    .suppress(Warning.STRICT_INHERITANCE, Warning.NONFINAL_FIELDS).verify();
-
-            // Verify not equals with subclass (for code coverage with Lombok)
-            Assert.assertFalse(clazz.newInstance().equals(createSubClassInstance(clazz.getName())));
         }
     }
 

@@ -72,16 +72,17 @@ public class CarResourceIntTest {
 
 
     private CarDTO createEntity() {
-        return CarDTO.builder()
-                .brand(DEFAULT_BRAND)
-                .color(DEFAULT_COLOR)
-                .creationDate(DEFAULT_DATE)
-                .description(DEFAULT_DESCRIPTION)
-                .model(DEFAULT_MODEL)
-                .newCar(DEFAULT_NEW_CAR)
-                .price(DEFAULT_PRICE)
-                .year(DEFAULT_YEAR)
-                .build();
+        CarDTO carDTO = new CarDTO();
+        carDTO.setBrand(DEFAULT_BRAND);
+        carDTO.setColor(DEFAULT_COLOR);
+        carDTO.setCreationDate(DEFAULT_DATE);
+        carDTO.setDescription(DEFAULT_DESCRIPTION);
+        carDTO.setModel(DEFAULT_MODEL);
+        carDTO.setNewCar(DEFAULT_NEW_CAR);
+        carDTO.setPrice(DEFAULT_PRICE);
+        carDTO.setYear(DEFAULT_YEAR);
+        return carDTO;
+
     }
 
     @Before
