@@ -1,4 +1,4 @@
-@Library('projetas-library') _
+@Library('projetas-library:master') _
 
 node {
     pipeline {
