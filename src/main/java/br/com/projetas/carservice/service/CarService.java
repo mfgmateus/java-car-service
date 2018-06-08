@@ -1,6 +1,6 @@
-package br.com.projetas.sampledemo.service;
+package br.com.projetas.carservice.service;
 
-import br.com.projetas.sampledemo.service.dto.CarDTO;
+import br.com.projetas.carservice.service.dto.CarDTO;
 
 import java.util.List;
 

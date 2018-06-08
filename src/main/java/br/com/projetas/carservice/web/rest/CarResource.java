@@ -1,8 +1,8 @@
-package br.com.projetas.sampledemo.web.rest;
+package br.com.projetas.carservice.web.rest;
 
 
-import br.com.projetas.sampledemo.service.CarService;
-import br.com.projetas.sampledemo.service.dto.CarDTO;
+import br.com.projetas.carservice.service.CarService;
+import br.com.projetas.carservice.service.dto.CarDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package br.com.projetas.sampledemo.service.dto;
+package br.com.projetas.carservice.service.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

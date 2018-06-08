@@ -1,10 +1,10 @@
-package br.com.projetas.sampledemo.service.impl;
+package br.com.projetas.carservice.service.impl;
 
-import br.com.projetas.sampledemo.domain.Car;
-import br.com.projetas.sampledemo.repository.CarRepository;
-import br.com.projetas.sampledemo.service.CarService;
-import br.com.projetas.sampledemo.service.dto.CarDTO;
-import br.com.projetas.sampledemo.service.mapper.CarMapper;
+import br.com.projetas.carservice.domain.Car;
+import br.com.projetas.carservice.repository.CarRepository;
+import br.com.projetas.carservice.service.CarService;
+import br.com.projetas.carservice.service.dto.CarDTO;
+import br.com.projetas.carservice.service.mapper.CarMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

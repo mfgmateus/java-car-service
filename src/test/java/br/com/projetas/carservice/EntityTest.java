@@ -1,4 +1,4 @@
-package br.com.projetas.sampledemo;
+package br.com.projetas.carservice;
 
 import com.google.common.reflect.ClassPath;
 import javassist.CannotCompileException;
@@ -33,8 +33,8 @@ import java.util.Set;
 public class EntityTest {
 
     private static final String[] MODEL_PACKAGES = {
-            "br.com.projetas.sampledemo.domain",
-            "br.com.projetas.sampledemo.service.dto"
+            "br.com.projetas.carservice.domain",
+            "br.com.projetas.carservice.service.dto"
     };
 
     private BeanTester beanTester;

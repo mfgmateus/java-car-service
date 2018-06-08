@@ -1,4 +1,4 @@
-package br.com.projetas.sampledemo.config;
+package br.com.projetas.carservice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package br.com.projetas.sampledemo.domain;
+package br.com.projetas.carservice.domain;
 
 import lombok.Data;
 

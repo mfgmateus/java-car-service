@@ -1,4 +1,4 @@
-package br.com.projetas.sampledemo;
+package br.com.projetas.carservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,10 +1,10 @@
-package br.com.projetas.sampledemo.web.rest;
+package br.com.projetas.carservice.web.rest;
 
-import br.com.projetas.sampledemo.SampleDemoApplication;
-import br.com.projetas.sampledemo.TestUtil;
-import br.com.projetas.sampledemo.service.CarService;
-import br.com.projetas.sampledemo.service.dto.CarDTO;
-import br.com.projetas.sampledemo.service.mapper.CarMapper;
+import br.com.projetas.carservice.CarServiceApplication;
+import br.com.projetas.carservice.TestUtil;
+import br.com.projetas.carservice.service.CarService;
+import br.com.projetas.carservice.service.dto.CarDTO;
+import br.com.projetas.carservice.service.mapper.CarMapper;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -28,7 +28,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = SampleDemoApplication.class)
+@SpringBootTest(classes = CarServiceApplication.class)
 public class CarResourceIntTest {
 
     private static final String DEFAULT_BRAND = "DEFAULT_BRAND";

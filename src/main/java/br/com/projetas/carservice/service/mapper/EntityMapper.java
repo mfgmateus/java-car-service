@@ -1,4 +1,4 @@
-package br.com.projetas.sampledemo.service.mapper;
+package br.com.projetas.carservice.service.mapper;
 
 import java.util.List;
 
