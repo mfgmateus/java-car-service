@@ -1,9 +1,10 @@
+@Library('projetas-library')
+
 pipeline {
   agent {
-    docker {
-      image 'maven:3-alpine'
+    node {
+    
     }
-
   }
   stages {
     stage('Build') {
