@@ -1,4 +1,4 @@
-@Library("jenkins-projetas") _
+final projetasLib = library("jenkins-projetas")
 
 PROJECT_NAME = "java-car-service"
 PROJECT_VERSION = "${env.BRANCH_NAME}:${BUILD_ID}"
@@ -22,4 +22,4 @@ def config = [
         ]
 ]
 
-javaPipeline(config)
+projetasLib.javaPipeline(config)
