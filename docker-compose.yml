@@ -1,7 +1,7 @@
 version: '2.1'
 services:
     car-service:
-        image: docker.projetas.com.br/car-service:latest
+        image: docker.projetas.com.br/java-car-service:latest
         ports:
             - 8080:8080
         restart: always
