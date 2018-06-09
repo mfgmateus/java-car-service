@@ -8,6 +8,7 @@ def config = [
         name          : 'Java Car Service',
         image         : PROJECT_NAME,
         stack         : PROJECT_NAME,
+        nodeLabel     : 'jenkins-slave.amazon-linux.projetas.com.br',
         buildExtras   : '',
         key           : "${PROJECT_NAME}:${PROJECT_VERSION}",
         version       : PROJECT_VERSION,
