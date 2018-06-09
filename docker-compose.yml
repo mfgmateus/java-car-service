@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3'
 services:
     car-service:
         image: docker.projetas.com.br/java-car-service:latest
