@@ -33,7 +33,7 @@ public class CarResource {
     }
     
     @GetMapping("/test")
-    public ResponseEntity<String> findAll() {
+    public ResponseEntity<String> findAllTest() {
         return ResponseEntity.ok("Teste Ok!");
     }
 
