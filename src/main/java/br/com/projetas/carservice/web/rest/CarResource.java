@@ -31,6 +31,11 @@ public class CarResource {
     public ResponseEntity<List<CarDTO>> findAll() {
         return ResponseEntity.ok(this.carService.findAll());
     }
+    
+    @GetMapping("/test")
+    public ResponseEntity<String> findAll() {
+        return ResponseEntity.ok("Teste Ok!");
+    }
 
     @GetMapping("/car/{id}")
     public ResponseEntity<CarDTO> findOne(@PathVariable("id") Long id) {
